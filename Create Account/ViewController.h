@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
+
+- (IBAction)createAccount:(id)sender;
+
+@property (retain, nonatomic) IBOutlet UITextField *username;
+@property (retain, nonatomic) IBOutlet UITextField *password;
 
 @end

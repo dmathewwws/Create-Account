@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1D74001622399B00B0C0CC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1D73FF1622399B00B0C0CC /* DetailViewController.m */; };
 		AFDB3E69162224380046030A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDB3E68162224380046030A /* UIKit.framework */; };
 		AFDB3E6B162224380046030A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDB3E6A162224380046030A /* Foundation.framework */; };
 		AFDB3E6D162224380046030A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDB3E6C162224380046030A /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF1D73FE1622399B00B0C0CC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AF1D73FF1622399B00B0C0CC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		AFDB3E64162224380046030A /* Create Account.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Create Account.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDB3E68162224380046030A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFDB3E6A162224380046030A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,8 @@
 				AFDB3E80162224380046030A /* MainStoryboard.storyboard */,
 				AFDB3E83162224380046030A /* ViewController.h */,
 				AFDB3E84162224380046030A /* ViewController.m */,
+				AF1D73FE1622399B00B0C0CC /* DetailViewController.h */,
+				AF1D73FF1622399B00B0C0CC /* DetailViewController.m */,
 				AFDB3E6F162224380046030A /* Supporting Files */,
 			);
 			path = "Create Account";
@@ -176,6 +181,7 @@
 				AFDB3E75162224380046030A /* main.m in Sources */,
 				AFDB3E79162224380046030A /* AppDelegate.m in Sources */,
 				AFDB3E85162224380046030A /* ViewController.m in Sources */,
+				AF1D74001622399B00B0C0CC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +297,7 @@
 				AFDB3E8A162224380046030A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

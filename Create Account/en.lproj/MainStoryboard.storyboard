@@ -1,26 +1,171 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QN7-gH-GPr">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="sCH-el-Zqm"/>
+                                    <constraint firstAttribute="width" constant="237" id="zW7-OG-iHn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MFy-xt-GGp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="QKT-Tg-WWK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRO-XJ-RX8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="CaE-XB-TM6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVi-hK-pnZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zNe-tM-GrK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvZ-9v-bUp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7mX-5V-NMQ"/>
+                                    <constraint firstAttribute="width" constant="68" id="O6U-EW-bPo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNk-pE-Um5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="ytz-M8-qoU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccount:" destination="2" eventType="touchUpInside" id="pHQ-K1-dms"/>
+                                    <segue destination="Q5b-Xm-fIP" kind="modal" id="SL5-tY-Q0x"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XVi-hK-pnZ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="95" id="650-G6-P7J"/>
+                            <constraint firstItem="XVi-hK-pnZ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ccn-XA-LV7"/>
+                            <constraint firstItem="TRO-XJ-RX8" firstAttribute="leading" secondItem="CvZ-9v-bUp" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="CmJ-tT-7Dy"/>
+                            <constraint firstItem="cNk-pE-Um5" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Ije-BO-B7F"/>
+                            <constraint firstItem="TRO-XJ-RX8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="142" id="cYb-P6-qMn"/>
+                            <constraint firstItem="CvZ-9v-bUp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gFt-Iv-Z6s"/>
+                            <constraint firstItem="QN7-gH-GPr" firstAttribute="top" secondItem="3" secondAttribute="top" constant="38" id="hcp-9j-4Kw"/>
+                            <constraint firstItem="cNk-pE-Um5" firstAttribute="centerX" secondItem="QN7-gH-GPr" secondAttribute="centerX" type="default" id="lEK-tD-ddd"/>
+                            <constraint firstItem="CvZ-9v-bUp" firstAttribute="top" secondItem="3" secondAttribute="top" constant="146" id="mQ4-kC-oKj"/>
+                            <constraint firstItem="XVi-hK-pnZ" firstAttribute="centerX" secondItem="CvZ-9v-bUp" secondAttribute="centerX" type="default" id="ppA-GV-lfp"/>
+                            <constraint firstItem="MFy-xt-GGp" firstAttribute="top" secondItem="3" secondAttribute="top" constant="91" id="ta3-UT-BWp"/>
+                            <constraint firstAttribute="bottom" secondItem="cNk-pE-Um5" secondAttribute="bottom" constant="60" id="vrV-0O-yF0"/>
+                            <constraint firstItem="MFy-xt-GGp" firstAttribute="leading" secondItem="XVi-hK-pnZ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="vtC-QD-HHX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="TRO-XJ-RX8" id="n7p-2c-Jkq"/>
+                        <outlet property="username" destination="MFy-xt-GGp" id="Uah-c7-Y7c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Myq-68-p4e">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="Q5b-Xm-fIP" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aAI-a4-xhv">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XY3-VP-7QP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="QsI-PZ-KfS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaa-U6-LNb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Avatar:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnB-Sd-pAN">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qaa-U6-LNb" firstAttribute="top" secondItem="aAI-a4-xhv" secondAttribute="top" constant="83" id="2Ga-PV-qtv"/>
+                            <constraint firstItem="qaa-U6-LNb" firstAttribute="centerX" secondItem="aAI-a4-xhv" secondAttribute="centerX" type="default" id="Ed4-JU-bUT"/>
+                            <constraint firstItem="qaa-U6-LNb" firstAttribute="leading" secondItem="XY3-VP-7QP" secondAttribute="leading" type="default" id="Emj-1v-NdP"/>
+                            <constraint firstItem="vnB-Sd-pAN" firstAttribute="top" secondItem="aAI-a4-xhv" secondAttribute="top" constant="141" id="KzL-Cl-tl8"/>
+                            <constraint firstItem="qaa-U6-LNb" firstAttribute="trailing" secondItem="XY3-VP-7QP" secondAttribute="trailing" type="default" id="NBn-37-7iB"/>
+                            <constraint firstItem="vnB-Sd-pAN" firstAttribute="leading" secondItem="qaa-U6-LNb" secondAttribute="leading" type="default" id="NcV-uZ-MlR"/>
+                            <constraint firstItem="XY3-VP-7QP" firstAttribute="top" secondItem="aAI-a4-xhv" secondAttribute="top" constant="47" id="SnI-zB-LnV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayPassword" destination="qaa-U6-LNb" id="OQk-VQ-Q3X"/>
+                        <outlet property="displayUsername" destination="XY3-VP-7QP" id="R1b-SA-eV5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2O-dv-ATI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437" y="73"/>
+        </scene>
     </scenes>
+    <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="displayPassword" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="displayUsername" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="createAccount:"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="username" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
